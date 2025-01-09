@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg-services{
+background: linear-gradient(135deg, #1f2b37, #4f76f6);
+}
+.bg-about{
+  background: linear-gradient(135deg, #4f76f6, #52da7f);
+}
