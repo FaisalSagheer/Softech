@@ -1,6 +1,27 @@
 import React from 'react';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+
 
 export default function Email() {
+
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+        
+        emailjs
+            .sendForm('service_mrv9t7l', 'template_jjqhbp3', form.current, {
+                publicKey: 'GgLuy-8eT_-7fAR6B',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    }
     return (
         <div className="isolate bg-slate-100 px-6 py-24 sm:py-32 lg:px-8" id='Email'>
             <div
@@ -22,9 +43,9 @@ export default function Email() {
                     Aute magna irure deserunt veniam aliqua magna enim voluptate.
                 </p> */}
             </div>
-            <form className="mx-auto mt-16 max-w-xl sm:mt-20">
+            <form className="mx-auto mt-16 max-w-xl sm:mt-20" ref={form} onSubmit={sendEmail}>
                 <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-                    <div>
+                    {/* <div>
                         <label htmlFor="first-name" className="block text-sm font-semibold text-gray-900">
                             First name
                         </label>
@@ -36,15 +57,15 @@ export default function Email() {
                                 className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
                         </div>
-                    </div>
+                    </div> */}
                     <div>
                         <label htmlFor="last-name" className="block text-sm font-semibold text-gray-900">
-                            Last name
+                            Full Name
                         </label>
                         <div className="mt-2.5">
                             <input
                                 type="text"
-                                name="last-name"
+                                name="from_name"
                                 id="last-name"
                                 className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
@@ -57,7 +78,7 @@ export default function Email() {
                         <div className="mt-2.5">
                             <input
                                 type="text"
-                                name="company"
+                                name="from_company"
                                 id="company"
                                 className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
@@ -70,7 +91,7 @@ export default function Email() {
                         <div className="mt-2.5">
                             <input
                                 type="email"
-                                name="email"
+                                name="from_email"
                                 id="email"
                                 className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
                             />
@@ -94,7 +115,7 @@ export default function Email() {
                                 </select> */}
                                 <input
                                     type="text"
-                                    name="phone-number"
+                                    name="from_number"
                                     id="phone-number"
                                     placeholder="123-456-7890"
                                     className="block w-full py-1.5 px-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline-indigo-600"
@@ -142,7 +163,7 @@ export default function Email() {
                 </div>
                 <div className="mt-10">
                     <button
-                        
+                        type='submit'
                         className="block w-full rounded-md bg-[#000b1c] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#000b1c] focus-visible:outline-[#000b1c]"
                     >
                         Let's talk
