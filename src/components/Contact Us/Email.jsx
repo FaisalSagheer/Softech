@@ -58,7 +58,7 @@ export default function Email() {
                             />
                         </div>
                     </div> */}
-                    <div>
+                    <div className='sm:col-span-2'>
                         <label htmlFor="last-name" className="block text-sm font-semibold text-gray-900">
                             Full Name
                         </label>
@@ -67,7 +67,7 @@ export default function Email() {
                                 type="text"
                                 name="from_name"
                                 id="last-name"
-                                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
+                                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-[#000b1c]"
                             />
                         </div>
                     </div>
@@ -80,7 +80,7 @@ export default function Email() {
                                 type="text"
                                 name="from_company"
                                 id="company"
-                                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
+                                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-[#000b1c]"
                             />
                         </div>
                     </div>
@@ -93,7 +93,7 @@ export default function Email() {
                                 type="email"
                                 name="from_email"
                                 id="email"
-                                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
+                                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-[#000b1c]"
                             />
                         </div>
                     </div>
@@ -118,7 +118,7 @@ export default function Email() {
                                     name="from_number"
                                     id="phone-number"
                                     placeholder="123-456-7890"
-                                    className="block w-full py-1.5 px-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline-indigo-600"
+                                    className="block w-full py-1.5 px-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline-[#000b1c]"
                                 />
                             </div>
                         </div>
@@ -132,7 +132,7 @@ export default function Email() {
                                 name="message"
                                 id="message"
                                 rows="4"
-                                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-indigo-600"
+                                className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 outline-gray-300 placeholder:text-gray-400 focus:outline-[#000b1c]"
                             ></textarea>
                         </div>
                     </div>
