@@ -39,6 +39,7 @@ export default function WebDev() {
                         <img
                             src={item.src}
                             className='shadow-lg cursor-pointer'
+                            loading="lazy"
                             alt={item.alt}
                             onClick={() => toggleFullImage(index)}
                         />
@@ -63,8 +64,9 @@ export default function WebDev() {
                                 <div className="swiper-zoom-container">
                                     <img
                                         src={WebImg[activeImage].full}
-                                        className="w-48"
                                         alt={WebImg[activeImage].alt}
+                                        className="w-48"
+                                        loading="lazy"
                                     />
                                 </div>
                             </SwiperSlide>

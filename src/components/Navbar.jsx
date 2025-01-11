@@ -34,6 +34,7 @@ function Navbar() {
                                         offset={item.offset}
                                         duration={item.duration}
                                         to={item.to}
+                                        className='cursor-pointer'
                                     >{item.prop}</Link>
                                 </li>
                             ))

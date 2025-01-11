@@ -35,7 +35,7 @@ export default function GraphicDes() {
                 {
                     GraphicDesign.map((src, index) => (
                         <div key={index} className="max-w-[26rem] m-5 p-5 rounded overflow-hidden text-center flex flex-col justify-center">
-                            <img src={src.Image} className='shadow-lg cursor-pointer' alt={src.alt}
+                            <img src={src.Image} loading="lazy" className='shadow-lg cursor-pointer' alt={src.alt}
                                 onClick={() => toggleFullImage(index)}
                             />
                         </div>
@@ -58,7 +58,7 @@ export default function GraphicDes() {
                             GraphicDesign.map((src, index) => (
                                 <SwiperSlide key={index}>
                                     <div className="swiper-zoom-container">
-                                        <img src={src.Image} className='shadow-lg pb-12' alt={src.alt} />
+                                        <img src={src.Image} loading="lazy" className='shadow-lg pb-12' alt={src.alt} />
                                     </div>
                                 </SwiperSlide>
                             ))

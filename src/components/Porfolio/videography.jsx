@@ -40,7 +40,7 @@ export default function Videography() {
                             className="last:h-[237px] cursor-pointer"
                             onClick={() => toggleFullImage(index)}
                         >
-                            <source src={src.src} />
+                            <source src={src.src} loading="lazy"/>
                         </video>
                     </div>
                 ))}
@@ -71,6 +71,7 @@ export default function Videography() {
                                             autoPlay
                                             loop
                                             className="w-[564px] pb-6"
+                                            loading="lazy"
                                         />
                                     </div>
                                 </SwiperSlide>

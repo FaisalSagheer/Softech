@@ -33,7 +33,7 @@ export default function Footer() {
                 <div className='flex flex-wrap items-center lg:justify-between justify-center'>
                     <div>
                         <Link smooth={true}
-                            offset={-120} duration={500} to="Hero" className='flex items-center'>
+                            offset={-120} duration={5000} to="Hero" className='flex items-center'>
                             <img src="https://www.softechgoal.com/Logo.png" className='h-32'/>
                             <p className='text-sm sm:text-sm lg:text-lg'>© 2024 Softechgoal. All rights reserved.</p>
                         </Link>
