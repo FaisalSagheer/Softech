@@ -9,7 +9,9 @@ import Portfolio from './components/Porfolio/Portfolio';
 import Email from './components/Contact Us/Email';
 
 function App() {
-
+document.addEventListener("contextmenu",(e)=>{
+  e.preventDefault();
+})
   return (
     <>
       <Navbar />
