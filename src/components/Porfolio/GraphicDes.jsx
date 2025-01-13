@@ -27,10 +27,12 @@ export default function GraphicDes() {
 
     return (
         <>
-            <div className='flex mx-auto px-8 text-center'>
-                <h1 className='text-3xl sm:text-4xl lg:text-5xl py-4 font-bold'>Graphic Designs</h1>
+            <div className='flex flex-col mx-auto px-8 text-center'>
+                <div>
+                    <h1 className='text-3xl sm:text-4xl lg:text-5xl py-0 lg:py-4 font-bold text-[#000b1c]'>Graphic Designs</h1>
+                </div>
+                <div className="line bg-about h-2 max-w-80 border mt-2 rounded mx-14"></div>
             </div>
-
             <div className="py-12 flex justify-center flex-wrap">
                 {
                     GraphicDesign.map((src, index) => (

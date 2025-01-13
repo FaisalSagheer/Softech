@@ -30,7 +30,7 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <div className='flex flex-col pt-4 lg:pt-20'>                      
+                    <div className='flex flex-col pt-4 lg:pt-64'>                      
                          {
                             footer1.map((item, index) => (
                                 <li className='px-5 pb-2' key={index}>

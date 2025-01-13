@@ -1,24 +1,25 @@
 import React from 'react';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
-
+import { toast } from 'react-toastify';
+import 'react-toastify/ReactToastify.css'
 
 export default function Email() {
-
+    // const notify = () => toast("Send")
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-        
+
         emailjs
-            .sendForm('service_mrv9t7l', 'template_jjqhbp3', form.current, {
-                publicKey: 'GgLuy-8eT_-7fAR6B',
+            .sendForm('service_5pss9lb', 'template_f5gghnx', form.current, {
+                publicKey: 'fpziOZslc4ihQp0G-',
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    toast.success('Send')
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    toast.error("Something Went Wrong!", error)
                 },
             );
     }
@@ -64,6 +65,7 @@ export default function Email() {
                         </label>
                         <div className="mt-2.5">
                             <input
+                                required
                                 type="text"
                                 name="from_name"
                                 id="last-name"
@@ -77,6 +79,7 @@ export default function Email() {
                         </label>
                         <div className="mt-2.5">
                             <input
+                                required
                                 type="text"
                                 name="from_company"
                                 id="company"
@@ -90,6 +93,7 @@ export default function Email() {
                         </label>
                         <div className="mt-2.5">
                             <input
+                                required
                                 type="email"
                                 name="from_email"
                                 id="email"
@@ -114,6 +118,7 @@ export default function Email() {
                                     <option>EU</option>
                                 </select> */}
                                 <input
+                                    required
                                     type="text"
                                     name="from_number"
                                     id="phone-number"
@@ -129,6 +134,7 @@ export default function Email() {
                         </label>
                         <div className="mt-2.5">
                             <textarea
+                                required
                                 name="message"
                                 id="message"
                                 rows="4"

@@ -15,6 +15,7 @@ import { Element } from 'react-scroll';
 import Loading from './components/Loading';
 import { BrowserRouter, Routes, Route, useNavigation} from 'react-router-dom';
 import React from 'react'
+import { ToastContainer } from 'react-toastify';
 
 function App() {
   // document.addEventListener("contextmenu",(e)=>{
@@ -35,6 +36,8 @@ function App() {
     <>
       {/* {preLoading ? <Loading /> : */}
       <>
+      <ToastContainer theme='dark'/>
+
         <BrowserRouter>
           <Navbar />
           <Routes>

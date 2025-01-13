@@ -15,15 +15,25 @@ function Navbar() {
     const toggleNavbar = () => {
         setMobileDrawerOpen(!MobileDrawerOpen)
     }
-
+    const [color, setColor] = useState(false)
+    const changeColor = () => {
+        if (window.scrollY >= 60) {
+            setColor(true)
+        }
+        else {
+            setColor(false)
+        }
+    }
+    window.addEventListener('scroll', changeColor)
+    
     return (
-        <nav className='sticky top-0 z-50 backdrop-blur-lg border-b
-    border-neutral-700/80 text-white'>
+        <nav className={`sticky top-0 z-50 border-b
+    border-neutral-700/80 text-white transition ease-in delay-[.3s] ${color}?'bg-black':'backdrop-blur-lg'`}>
             <div className="container lg:px-9 mx-auto relative text-sm">
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center -mb-5">
                     <Link smooth={true}
                         offset={-120} duration={500} to="Hero">
-                        <img src="https://www.softechgoal.com/Logo.png" className='h-28' />
+                        <img src="https://www.softechgoal.com/Logo.png" className='w-40' />
                     </Link>
                     <ul className='hidden lg:flex ml-14 space-x-12 font-medium'>
                         {

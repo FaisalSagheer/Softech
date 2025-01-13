@@ -21,8 +21,8 @@ function Banner() {
     }
     return (
         <>
-            <div className="text-white py-10 lg:py-20 px-10 bg-[#000b1c]">
-                <p ref={ref} className='capitalize text-2xl sm:text-5xl lg:text-7xl leading-5 lg:leading-snug flex flex-wrap justify-center'>
+            <div className="text-white py-10 lg:py-10 px-10 bg-[#000b1c]">
+                <p ref={ref} className='capitalize text-2xl sm:text-5xl lg:text-7xl leading-5 flex flex-wrap justify-center'>
                     {words.map((word, index) => {
                         const start = index/words.length;
                         const end = start + (1/words.length)
