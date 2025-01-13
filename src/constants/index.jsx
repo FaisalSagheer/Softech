@@ -9,13 +9,47 @@ import video2 from '../assets/Videos/videography2.mp4';
 
 
 export const navItems = [
-  { prop: "Home", offset:-120, duration:500, to:"Hero"},
-  { prop: "About Us", offset:-100, duration:500, to:"AboutUs"},
-  { prop: "Services", offset:-100, duration:500, to:"Services"},
-  { prop: "Works", offset:-100, duration:500, to:"Portfolio"},
-  { prop: "Contact", offset:10, duration:500, to:"Email"},
+  { prop: "Home", offset:-120, duration:1500, to:"Hero"},
+  { prop: "About Us", offset:-100, duration:1500, to:"AboutUs"},
+  { prop: "Services", offset:-100, duration:1500, to:"Services"},
+  { prop: "Works", offset:-100, duration:1500, to:"Portfolio"},
+  { prop: "Contact", offset:-100, duration:4500, to:"Email"},
 ];
 
+export const serviceItems = [
+  {
+    icon:"🌐",
+    title:"Web Development",
+    paragrapgh:"Custom web development solutions tailored to your business needs."
+  },
+  {
+    icon:"📱",
+    title:"App Development",
+    paragrapgh:"Innovative mobile app development for iOS and Android platforms."
+  },
+  {
+    icon:"🎮",
+    title:"Game Development",
+    paragrapgh:"Engaging game development services for all platforms."
+  },
+  {
+    icon:"🔍",
+    title:"SEO",
+    paragrapgh:"Expert SEO strategies to boost your online visibility."
+  },
+  {
+    icon:"📢",
+    title:"Social Media Marketing",
+    paragrapgh:" Dynamic social media campaigns to grow your brand."
+  },
+  {
+    icon:"🖌️",
+    title:"2D/3D Graphics",
+    paragrapgh:"High-quality 2D and 3D graphics to enhance your projects."
+  },
+  
+  
+]
 export const WebImg = [
   { src: pet, alt: "Design", full: petFull },
   { src: pet, alt: "Design" , full: petFull },

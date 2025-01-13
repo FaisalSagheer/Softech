@@ -19,7 +19,7 @@ function Navbar() {
     return (
         <nav className='sticky top-0 z-50 backdrop-blur-lg border-b
     border-neutral-700/80 text-white'>
-            <div className="container px-9 mx-auto relative text-sm">
+            <div className="container lg:px-9 mx-auto relative text-sm">
                 <div className="flex justify-between items-center">
                     <Link smooth={true}
                         offset={-120} duration={500} to="Hero">
@@ -40,7 +40,7 @@ function Navbar() {
                             ))
                         }
                     </ul>
-                    <div className="lg:hidden md:flex justify-end">
+                    <div className="lg:hidden md:flex justify-end pr-5 pt-2">
                         <button onClick={toggleNavbar}>
                             {MobileDrawerOpen ? <X /> : <Menu />}
                         </button>
@@ -49,11 +49,11 @@ function Navbar() {
                 {
                     MobileDrawerOpen && (
                         <div className="fixed right-0 flex flex-col justify-center items-center lg:hidden
-                        w-full p-12 bg-neutral-900">
+                        w-full p-5 text-center bg-[#000b1c]">
                             <ul>
                                 {
                                     navItems.map((item, index) => (
-                                        <li key={index}>
+                                        <li key={index} className='py-2'>
                                             <Link aria-current="page"
                                                 smooth={true}
                                                 offset={item.offset}

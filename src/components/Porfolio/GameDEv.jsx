@@ -5,7 +5,7 @@ export default function GameDEv() {
   return (
     <>
     <div className='flex mx-auto px-8 text-center'>
-        <h1 className='text-2xl sm:text-3xl lg:text-5xl py-4 font-bold'>Game Development</h1>
+        <h1 className='text-3xl sm:text-4xl lg:text-5xl py-4 font-bold'>Game Development</h1>
     </div>
 
     <div className="py-12 flex justify-center flex-wrap">
