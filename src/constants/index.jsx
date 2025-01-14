@@ -15,10 +15,10 @@ import video2 from '../assets/Videos/videography2.mp4';
 
 export const navItems = [
   { prop: "Home", offset:-120, duration:1500, to:"Hero"},
-  { prop: "About Us", offset:-100, duration:1500, to:"AboutUs"},
-  { prop: "Services", offset:-100, duration:1500, to:"Services"},
-  { prop: "Works", offset:-140, duration:1500, to:"Portfolio"},
-  { prop: "Contact", offset:-100, duration:4500, to:"Email"},
+  { prop: "About Us", offset:-80, duration:1500, to:"AboutUs"},
+  { prop: "Services", offset:-80, duration:1500, to:"Services"},
+  { prop: "Works", offset:-80, duration:1500, to:"Portfolio"},
+  { prop: "Contact", offset:-80, duration:4500, to:"Email"},
 ];
 
 export const serviceItems = [
