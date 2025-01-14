@@ -1,6 +1,7 @@
 import React from 'react'
 import Video from '../../assets/Videos/3DGraphics1.mp4';
-// import video2 from '../assets/Videos/videography2.mp4';
+import art1 from '../../assets/2D Arts/2danimationport1.jpg';
+import art2 from '../../assets/2D Arts/2danimationport3.jpg';
 
 
 export default function GraphicsD() {
@@ -22,11 +23,11 @@ export default function GraphicsD() {
         </div>
         
         <div className="max-w-[28rem] m-5 p-5 rounded overflow-hidden text-center flex flex-col justify-center">
-            <img src='https://www.softechgoal.com/2danimationport3.jpg' loading="lazy" className='shadow-lg' alt="#" />
+            <img src={art2} loading="lazy" className='shadow-lg' alt="#" />
         </div>
 
         <div className="max-w-[28rem] m-5 p-5 rounded overflow-hidden text-center flex flex-col justify-center">
-            <img src='https://www.softechgoal.com/2danimationport1.jpg' loading="lazy" className='shadow-lg' alt="#" />
+            <img src={art1} loading="lazy" className='shadow-lg' alt="#" />
         </div>
 
 
