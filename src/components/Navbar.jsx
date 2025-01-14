@@ -2,7 +2,7 @@ import { Menu, X } from 'lucide-react';
 import React, { useState, useEffect } from 'react';
 import { navItems } from '../constants/index';
 import { Link } from 'react-scroll';
-
+import Logo from '../assets/Logo.png';
 function Navbar() {
     const [MobileDrawerOpen, setMobileDrawerOpen] = useState(false);
     const [color, setColor] = useState(false);
@@ -27,7 +27,7 @@ function Navbar() {
             <div className="container lg:px-9 mx-auto relative text-sm">
                 <div className="flex justify-between items-center -mb-5">
                     <Link smooth={true} offset={-120} duration={500} to="Hero">
-                        <img src="https://www.softechgoal.com/Logo.png" alt="Logo" className="w-40" />
+                        <img src={Logo} alt="Logo" className="w-32" />
                     </Link>
                     <ul className="hidden lg:flex ml-14 space-x-12 font-medium">
                         {navItems.map((item, index) => (

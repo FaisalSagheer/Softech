@@ -3,6 +3,7 @@
 import React from 'react';
 import { footer1, footer2 } from '../constants';
 import { Link } from 'react-scroll';
+import Logo from '../assets/Logo.png';
 
 export default function Footer() {
     return (
@@ -14,7 +15,7 @@ export default function Footer() {
                         <div className='flex flex-col -mt-20 lg:-mt-0'>
                             <Link smooth={true}
                                 offset={-120} duration={8000} to="Hero" className='flex flex-col items-center lg:items-start'>
-                                <img src="https://www.softechgoal.com/Logo.png" className='w-72 lg:-ml-16'/>
+                                <img src={Logo} className='w-72 lg:-ml-16'/>
                                 <p className='text-xl sm:text-sm lg:text-lg -mt-20 lg:-mt-16 py-5 lg:py-0 px-3'>Empowering innovation and delivering cutting-edge solutions,<br/> 
                                     our software startup is here to redefine the future of technology.</p>
                             </Link>
