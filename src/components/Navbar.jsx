@@ -25,11 +25,11 @@ function Navbar() {
     return (
         <nav className={`sticky top-0 z-50 backdrop-blur-lg border-b border-neutral-700/80 text-white ${color ? 'bg-[#000b1c]' : ''}`}>
             <div className="container lg:px-9 mx-auto relative text-sm">
-                <div className="flex justify-between items-center -mb-5">
+                <div className="flex justify-between items-center">
                     <Link smooth={true} offset={-120} duration={500} to="Hero">
-                        <img src={Logo} alt="Logo" className="w-32" />
+                        <img src={Logo} alt="Logo" className="w-36" />
                     </Link>
-                    <ul className="hidden lg:flex ml-14 space-x-12 font-medium">
+                    <ul className="hidden lg:flex ml-14 space-x-12 font-medium items-center">
                         {navItems.map((item, index) => (
                             <li key={index}>
                                 <Link

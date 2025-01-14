@@ -14,9 +14,9 @@ import React from 'react'
 import { ToastContainer } from 'react-toastify';
 
 function App() {
-  document.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-  })
+  // document.addEventListener("contextmenu", (e) => {
+  //   e.preventDefault();
+  // })
   return (
     <>
       <>

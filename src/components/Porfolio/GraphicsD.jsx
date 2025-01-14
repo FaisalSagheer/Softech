@@ -20,6 +20,7 @@ export default function GraphicsD() {
             <source src={Video} loading="lazy"/>
           </video>
         </div>
+        
         <div className="max-w-[28rem] m-5 p-5 rounded overflow-hidden text-center flex flex-col justify-center">
             <img src='https://www.softechgoal.com/2danimationport3.jpg' loading="lazy" className='shadow-lg' alt="#" />
         </div>
