@@ -1,7 +1,12 @@
 
 
-import pet from '../assets/Wed_Designs/Hero-Section_PetWeb.png';
-import petFull from '../assets/Wed_Designs/Landing_Page.png';
+import Pet from '../assets/Wed_Designs/Hero-Section_PetWeb.png';
+import PetFull from '../assets/Wed_Designs/Landing_Page.png';
+import Boat from '../assets/Wed_Designs/Hero-Section-Boat.png';
+import BoatFull from '../assets/Wed_Designs/Landing-Page-Boat.png'
+import Coffee from '../assets/Wed_Designs/coffee-Hero-Section.png'
+import CoffeeFull from '../assets/Wed_Designs/Landing-Page-Coffee.png'
+
 import video1 from '../assets/Videos/Videography1.mp4';
 import video2 from '../assets/Videos/videography2.mp4';
 
@@ -12,7 +17,7 @@ export const navItems = [
   { prop: "Home", offset:-120, duration:1500, to:"Hero"},
   { prop: "About Us", offset:-100, duration:1500, to:"AboutUs"},
   { prop: "Services", offset:-100, duration:1500, to:"Services"},
-  { prop: "Works", offset:-100, duration:1500, to:"Portfolio"},
+  { prop: "Works", offset:-140, duration:1500, to:"Portfolio"},
   { prop: "Contact", offset:-100, duration:4500, to:"Email"},
 ];
 
@@ -51,9 +56,9 @@ export const serviceItems = [
   
 ]
 export const WebImg = [
-  { src: pet, alt: "Design", full: petFull },
-  { src: pet, alt: "Design" , full: petFull },
-  { src: pet, alt: "Design" , full: petFull },
+  { src: Pet, alt: "Design", full: PetFull },
+  { src: Boat, alt: "Design" , full: BoatFull },
+  { src: Coffee, alt: "Design" , full: CoffeeFull },
 ]
 
 export const BannerParagraph = "Contact us to explore your Goals and we’ll craft a personalized package of services tailored to your unique needs and budget."
@@ -89,6 +94,5 @@ export const footer2 = [
   {icon:"fa-brands fa-linkedin-in",href:"https://www.linkedin.com/company/softechgoal",target:"_blank"},
   {icon:"fa-brands fa-instagram px-5",href:"https://www.instagram.com/softechgoal?igsh=MWZqZ3Rxb2MxN2g5ZA==",target:"_blank"},
   {icon:"fa-brands fa-facebook-f",href:"https://www.facebook.com/profile.php?id=61565552590000",target:"_blank"},
-
 ]
 

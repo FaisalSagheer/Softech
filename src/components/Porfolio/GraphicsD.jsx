@@ -16,7 +16,7 @@ export default function GraphicsD() {
     <div className="py-12 flex justify-center flex-wrap">
 
         <div className="max-w-[28rem] m-5 p-5 rounded overflow-hidden text-center flex flex-col justify-center">
-          <video autoPlay loop muted>
+          <video autoPlay loop>
             <source src={Video} loading="lazy"/>
           </video>
         </div>

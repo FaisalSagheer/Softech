@@ -12,29 +12,16 @@ import Email from './components/Contact Us/Email';
 import Footer from './components/Footer';
 import NotFound from './components/NotFound';
 import { Element } from 'react-scroll';
-import Loading from './components/Loading';
-import { BrowserRouter, Routes, Route, useNavigation} from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import React from 'react'
 import { ToastContainer } from 'react-toastify';
 
 function App() {
-  // document.addEventListener("contextmenu",(e)=>{
-  //   e.preventDefault();
-  // })
-  // const [preLoading, setLoading] = useState(true)
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setLoading(false)
-  //   }, 5000)
-  // },)
-
-  // const navigation = useNavigation();
-  // console.log(navigation)
-
-  // if (navigation.state === "loading") return <Loading />
+  document.addEventListener("contextmenu",(e)=>{
+    e.preventDefault();
+  })
   return (
     <>
-      {/* {preLoading ? <Loading /> : */}
       <>
       <ToastContainer theme='dark'/>
 
@@ -69,7 +56,6 @@ function App() {
           </Routes>
         </BrowserRouter>
       </>
-      {/* } */}
     </>
 
   )
