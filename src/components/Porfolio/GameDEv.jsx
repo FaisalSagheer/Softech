@@ -1,4 +1,5 @@
 import React from 'react'
+import { GameDev } from '../../constants'
 
 export default function GameDEv() {
 
@@ -11,20 +12,12 @@ export default function GameDEv() {
                 <div className="line bg-about h-2 max-w-80 border mt-2 rounded mx-20"></div>
             </div>
             <div className="py-12 flex justify-center flex-wrap">
-
-                <div className="max-w-[28rem] m-5 p-5 rounded overflow-hidden text-center flex flex-col justify-center">
-                    <img src='https://www.softechgoal.com/gamedevport1.png' className='shadow-lg' alt="#" />
-                </div>
-
-                <div className="max-w-[28rem] m-5 p-5 rounded overflow-hidden text-center flex flex-col justify-center">
-                    <img src='https://www.softechgoal.com/gamedevport2.png' className='shadow-lg' alt="#" />
-                </div>
-
-                <div className="max-w-[28rem] m-5 p-5 rounded overflow-hidden text-center flex flex-col justify-center">
-                    <img src='https://www.softechgoal.com/gamedevport3.png' className='shadow-lg' alt="#" />
-                </div>
-
-            </div>
+                {GameDev.map((item, index) =>(
+                        <div key={index} className="max-w-[28rem] m-5 p-5 rounded overflow-hidden text-center flex flex-col justify-center" >
+                            <img src={item.src} loading='lazy' className='shadow-lg' alt={item.alt} />
+                        </div>
+                        ))}
+            </div >
         </>
 
     )

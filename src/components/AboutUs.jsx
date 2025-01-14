@@ -1,4 +1,5 @@
 import React from 'react'
+import About from '../assets/Images/About.png'
 
 export default function AboutUs() {
   return (
@@ -10,7 +11,7 @@ export default function AboutUs() {
           </p>
         </div>
         <div className="image_about -mt-6 lg:-mt-0 lg:pt-20">
-          <img src="https://www.softechgoal.com/About%20us%20Img.png" className='max-lg:w-screen' alt="laptop img" />
+          <img src={About} className='max-lg:w-screen' alt="laptop img" />
         </div>
       </div>
     </>

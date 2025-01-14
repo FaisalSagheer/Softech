@@ -1,7 +1,7 @@
 import React from 'react'
 import Video from '../../assets/Videos/3DGraphics1.mp4';
-import art1 from '../../assets/2D Arts/2danimationport1.jpg';
-import art2 from '../../assets/2D Arts/2danimationport3.jpg';
+import art1 from '../../assets/Images/2danimationport1.jpg';
+import art2 from '../../assets/Images/2danimationport3.jpg';
 
 
 export default function GraphicsD() {
